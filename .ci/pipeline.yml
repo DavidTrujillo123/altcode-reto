@@ -1,0 +1,12 @@
+# Checks that run on every pull request to main (git.altscore.local CI).
+checks:
+  - name: install
+    run: pip install -r requirements-dev.txt
+  - name: lint
+    run: ruff check .
+  - name: tests
+    run: pytest -q
+  - name: architecture
+    run: lint-imports   # contracts in .importlinter
+  - name: dependency-review
+    run: dependency-review --fail-on untrusted-source

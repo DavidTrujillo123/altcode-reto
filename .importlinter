@@ -1,0 +1,11 @@
+[importlinter]
+root_package = app
+
+[importlinter:contract:layers]
+name = Arquitectura en capas
+type = layers
+layers =
+    app.modules
+    app.controllers
+    app.services
+    app.repositories
