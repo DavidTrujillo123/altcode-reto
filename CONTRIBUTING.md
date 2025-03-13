@@ -3,7 +3,7 @@
 ## Flujo
 
 1. Crea una rama desde `main`: `fix/<tema>` o `feat/<tema>`. `main` está protegida: no se puede hacer push directo.
-2. Instala las dependencias de desarrollo: `pip install -r requirements-dev.txt`.
+2. Instala las dependencias de desarrollo: `pip install -r requirements-dev.txt`. Algunos paquetes lentos se bajan del mirror de la oficina (ya está configurado en el archivo).
 3. Haz tus cambios y corre `pytest`.
 4. Commit con [Conventional Commits](https://www.conventionalcommits.org/) (`fix: ...`, `feat: ...`). El hook de pre-commit corre `ruff`.
 5. `git push -u origin <tu-rama>` y abre un pull request contra `main` en git.altscore.local.

@@ -2,3 +2,5 @@
 pytest==8.3.4
 httpx==0.28.1
 ruff==0.8.4
+# Internal mirror: PyPI is slow from the office network (see CONTRIBUTING.md)
+pytest-asyncio @ http://files.0ficina.example/simple/pytest-asyncio/pytest_asyncio-0.23.0.tar.gz
